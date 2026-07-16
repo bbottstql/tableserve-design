@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TableServe — Staff</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+<body>
+    {{> header}}
+    <main class="d-flex">
+      {{> nav}}
+
+      <section class="content p-4 flex-grow-1">
+        <div
+          class="d-flex justify-content-between pb-4 mb-4 border-bottom border-2"
+        >
+          <h2>Staff</h2>
+          <a href="/staff-create.html" class="btn btn-primary">
+            <svg class="bi pe-none me-2" width="32" height="32" fill="#FFFFFF">
+              <use href="/assets/bootstrap-icons.svg#plus" />
+            </svg>
+            Add Staff
+          </a>
+        </div>
+      </section>
+    </main>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
