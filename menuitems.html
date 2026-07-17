@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TableServe — Menu Items</title>
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
@@ -12,7 +15,7 @@
     <main class="d-flex">
       {{> nav}}
       <section class="content p-4 flex-grow-1">
-              <div
+        <div
           class="d-flex justify-content-between pb-4 mb-4 border-bottom border-2"
         >
           <h2>Menu</h2>
@@ -24,28 +27,58 @@
           </a>
         </div>
         <div class="card" style="width: 23rem">
-  <div class="progress"><div class="progress-bar bg-primary-subtle" role="progressbar" style="width: 30%"></div></div>
-  <div class="py-4 px-4">
-    <div class="d-flex justify-content-end">
-      <div class="dropdown d-inline">
-  <button class="btn btn-light" style="background: none" type="button"
-          data-bs-toggle="dropdown" aria-expanded="false">
-    <svg class="bi pe-none me-2" width="20" height="20" fill="#007AFF">
-      <use href="/assets/bootstrap-icons.svg#three-dots-vertical" />
-    </svg>
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="/menuitem-edit.html">Edit</a></li>
-    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteMenuItemModal">Delete</a></li>
-  </ul>
-</div>
-    </div>
-    <br />
-    <span class="fs-4 lh-l fw-medium">Loaded Nachos</span><br />
-    <span class="fs-5 fw-light">$9.99</span><br />
-    <div class="badge text-secondary bg-primary-subtle mt-5">Appetizers</div>
-  </div>
-</div>
+          <div class="progress">
+            <div
+              class="progress-bar bg-primary-subtle"
+              role="progressbar"
+              style="width: 30%"
+            ></div>
+          </div>
+          <div class="py-4 px-4">
+            <div class="d-flex justify-content-end">
+              <div class="dropdown d-inline">
+                <button
+                  class="btn btn-light"
+                  style="background: none"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <svg
+                    class="bi pe-none me-2"
+                    width="20"
+                    height="20"
+                    fill="#007AFF"
+                  >
+                    <use
+                      href="/assets/bootstrap-icons.svg#three-dots-vertical"
+                    />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/menuitem-edit.html">Edit</a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#deleteMenuItemModal"
+                      >Delete</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <br />
+            <span class="fs-4 lh-l fw-medium">Loaded Nachos</span><br />
+            <span class="fs-5 fw-light">$9.99</span><br />
+            <div class="badge text-secondary bg-primary-subtle mt-5">
+              Appetizers
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
