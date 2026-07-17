@@ -12,7 +12,49 @@
     <main class="d-flex">
       {{> nav}}
       <section class="content p-4 flex-grow-1">
-        <!-- build your page content here — refer to _data.md for data -->
+        <form class="form w-50">
+  <div class="card p-4">
+    <h5 class="card-title"><strong>Item</strong></h5>
+
+    <div class="mb-3">
+      <label for="menuItemId" class="form-label">Menu Item</label>
+      <select id="menuItemId" class="form-select">
+        <option value="0" selected>Select...</option>
+        <option value="1">Loaded Nachos</option>
+        <option value="2">Mozzarella Sticks</option>
+        <!-- ...all menu items -->
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="price" class="form-label">Price</label>
+      <div class="form-label">$0.00</div>
+    </div>
+
+    <div class="mb-3">
+      <label for="quantity" class="form-label">Quantity</label>
+      <input id="quantity" type="number" class="form-control" value="0" />
+    </div>
+
+    <div class="mb-3">
+      <label for="notes" class="form-label">Notes</label>
+      <input id="notes" type="text" class="form-control" placeholder="Enter any notes for this item (optional)" />
+    </div>
+
+    <div class="mb-3">
+      <label for="amount" class="form-label">Amount</label>
+      <div class="form-label">$0.00</div>
+    </div>
+
+    <div class="d-flex justify-content-end mt-4">
+      <a href="/order-detail.html" class="btn btn-outline-primary me-2">Cancel</a>
+      <button type="submit" class="btn btn-primary">
+        <svg class="bi pe-none me-2" width="16" height="16" fill="#FFFFFF"><use href="/assets/bootstrap-icons.svg#save" /></svg>
+        Save item
+      </button>
+    </div>
+  </div>
+</form>
       </section>
     </main>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
