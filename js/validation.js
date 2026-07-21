@@ -16,10 +16,7 @@ document.querySelectorAll("form[novalidate]").forEach((form) => {
       if (invalid) firstInvalid ??= control;
     });
 
-    if (firstInvalid) {
-      form.classList.add("was-validated");
-      firstInvalid.focus();
-    } else if (form.dataset.success)
-      window.location.href = form.dataset.success;
+    if (firstInvalid) firstInvalid.focus();
+    else if (form.dataset.success) window.location.href = form.dataset.success;
   });
 });
