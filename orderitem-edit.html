@@ -17,18 +17,20 @@
         >
           <h2>Edit Order Item</h2>
         </div>
-        <form class="form w-50">
+        <form class="form w-50" novalidate data-success="/order-detail.html">
           <div class="card p-4">
             <h5 class="card-title"><strong>Item</strong></h5>
 
             <div class="mb-3">
               <label for="menuItemId" class="form-label">Menu Item</label>
-              <select id="menuItemId" class="form-select">
+              <select id="menuItemId" class="form-select" required>
+                <option value="">Select...</option>
                 <option value="0" selected>Garlic Fries...</option>
                 <option value="1">Loaded Nachos</option>
                 <option value="2">Mozzarella Sticks</option>
                 <!-- ...all menu items -->
               </select>
+              <div class="invalid-feedback">Menu item is required</div>
             </div>
 
             <div class="mb-3">
@@ -43,7 +45,9 @@
                 type="number"
                 class="form-control"
                 value="2"
+                min="1"
               />
+              <div class="invalid-feedback">Quantity must be at least 1</div>
             </div>
 
             <div class="mb-3">
@@ -81,6 +85,7 @@
         </form>
       </section>
     </main>
+    <script src="/js/validation.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
